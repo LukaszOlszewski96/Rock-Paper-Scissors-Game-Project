@@ -1,0 +1,27 @@
+.left-conteiner{
+    background-color:  #FC6706;
+    height: 1050px;
+    width: 70px;
+    display: block;
+    text-align: center;
+}
+.profile-icon{
+    padding-top: 30px;
+    font-size: 50px;
+    color: #ffffff;
+}
+.leftbar-icons{
+    font-size: 40px;
+    margin-top: 15px;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #ffffff;
+}
+.leftbar-icons:hover{
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+    border-right: solid 2px white;
+}
+

@@ -1,0 +1,123 @@
+
+.calendar-box{
+    display: block;
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+.planner-month-conteiner{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.planner-month-box{
+    display: flex;
+    background-color: #FC6706;
+    width: 200px;
+    height: 40px;
+    border-radius: 50px;
+    box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.342);
+    justify-content: center;
+    align-items: center;
+}
+.planner-month-name{
+    color: #ffff;
+    font-size: 24px;
+    font-weight: bold;
+}
+.days-box-horizontal{
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+
+}
+.days-box-horizontal-numbers{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+
+}
+.days-box a{
+    color: #FC6706;
+    font-size: 18px;
+    font-weight: bold;
+}
+.days-box{
+    width: 30px;
+    height: 30px;
+    margin-right: 50px;
+}
+.days-box-number a{
+    color: #ffff;
+    font-size: 18px;
+    font-weight: bold;
+}
+.days-box-number{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin-right: 50px;
+    background-color: #FC6706;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.342);
+}
+.days-box-number:hover{
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.342);
+    border-radius: 20%;
+}
+.planner-conteiner{
+    height: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: block;
+}
+.date-number-planner{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 50px;
+}
+.input-planner{
+    display: flex;
+    width: auto;
+    margin-top: 20px;
+    justify-content: center;
+}
+.input-text-planner1, .input-text-planner2, .input-text-planner3, .input-text-planner4, .input-text-planner5{
+    display: flex;
+    border: 2px solid #FC6706;
+    padding: 5px;
+    height: 25px;
+    width: 750px;
+    outline: none;
+    color: #FC6706;
+    font-size: 20px;
+}
+.button-generate-planner{
+    outline: none;
+    background-color: #FC6706;
+    border: solid 2px #FC6706;
+    border-radius: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.363);
+    margin-top: 25px;
+    font-size: 25px;
+    margin-left: 30px;
+}
+.button-generate-planner:active{
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.363);
+        background-color: rgba(255, 166, 0, 0.425);
+        color: darkorange;
+}

@@ -1,0 +1,141 @@
+.main-conteiner-login{
+    width: 100%;
+    height: 500px;
+    position:absolute;
+    background-color: transparent;
+}
+.Login-conteiner{
+    width: 25%;
+    height: 400px;
+    background-color: transparent;
+    position: relative;
+    left:32%;
+    top: 50px;
+    border-left: solid 3px orange;
+}
+h2{
+    color: orange;
+    margin-left: 30px;
+}
+.input-form-email{
+    display: flex;
+    width: auto;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.input-text-email{
+    display: flex;
+    border: 2px solid orange;
+    padding: 5px;
+    height: 15px;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 20px 20px 20px 20px ;
+    outline: none;
+    color: orange;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.363);
+}
+.icon-email{
+    display: flex;
+    font-size: 28px;
+    color: orange;
+    margin-right: 5px;
+    margin-left: 30px;
+}
+.input-form-password{
+    display: flex;
+    width: auto;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 20px;
+}
+ 
+.input-text-password{
+    display: flex;
+    border: 2px solid orange;
+    padding: 5px;
+    height: 15px;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 20px 20px 20px 20px ;
+    outline: none;
+    color: orange;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.363);
+}
+.icon-password{
+    display: flex;
+    font-size: 28px;
+    color: orange;
+    margin-right: 5px;
+    margin-left: 30px;
+}
+.Button-Login{
+        outline: none;
+        background-color: orange;
+        border: solid 2px orange;
+        border-radius: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.363);
+        margin-top: 15px;
+        margin-left: 110px;
+    }
+.Button-Login:active{
+        box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.363);
+        background-color: rgba(255, 166, 0, 0.425);
+        color: darkorange;
+}
+.Button-Login:hover{
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.363);
+}
+ 
+.remaind-password{
+        font-size: 12px;
+        display: block;
+        margin-top: 10px;
+        margin-left: 210px;
+        color: blue;
+        text-decoration: none;
+        font-weight: bold;
+}
+.remaind-password:hover{
+    color: rgba(0, 0, 255, 0.473);
+}
+.auth-box{
+    display: flex;
+    width: 400px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.facebook-auth{
+    font-size: 45px;
+    color: blue;
+    margin-right: 40px;
+    
+}
+.gmail-auth{
+    font-size: 50px;
+}
+.text{
+    font-size: 12px;
+    color: orange;
+    font-weight: bold;
+    margin-left: 90px;
+    margin-top: 20px;
+ 
+}
+.text a{
+    color: blue;
+    text-decoration: none;
+    font-size: 12px;
+}
+.text a:hover{
+        color: rgba(0, 0, 255, 0.473);
+}
+ 
+
