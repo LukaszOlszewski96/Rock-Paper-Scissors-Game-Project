@@ -1,5 +1,7 @@
 import { BiSearchAlt } from 'react-icons/bi';
 import { useHistory } from 'react-router-dom';
+import Login from './Button/Login';
+import Logout from '../Login/Logout';
 import './Navbar.css';
  
  
@@ -10,11 +12,6 @@ function Navbar() {
     function clcHomeButton (){
         history.push('/');
    }
- 
-    function clcLoginButton (){
-         history.push('/login');
-    }
- 
     function clcRegisterButton (){
         history.push('/register');
    }
@@ -54,9 +51,8 @@ function Navbar() {
                     Współpraca
                 </a>
                 </div>
-                <button type="button" className="login-button" onClick={clcLoginButton} >
-                    Zaloguj się
-                </button>
+                <Login/>
+                <Logout/>
                 <button type="button" className="sign-button" onClick={clcRegisterButton}>
                     Zarejestruj się
                 </button>

@@ -1,0 +1,20 @@
+.logout-button{
+    outline: none;
+    background-color: transparent;
+    border: solid 2px  #FC6706;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color:  #FC6706;
+    font-weight: bold;
+    margin-right: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.363);
+}
+.logout-button:active{
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.363);
+    background-color: rgba(255, 166, 0, 0.425);
+    color: darkorange;
+}
