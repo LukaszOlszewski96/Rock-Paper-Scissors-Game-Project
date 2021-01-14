@@ -2,8 +2,11 @@ import React from 'react';
 import LeftBar from '../LeftBar';
 import './Education.css';
 import Calendar from './Calendar/Calendar';
+import firebase from 'firebase';
+import { db } from '../../Login/googleAuth';
 
 function Education() {
+
     return (
         <div className="screen">
             <LeftBar/>

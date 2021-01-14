@@ -1,6 +1,7 @@
 import firebase from 'firebase/app';
 import 'firebase/auth';
 import "firebase/firestore";
+import "firebase/storage";
 
 const settings = {timestampsInSnapshots: true};
 
@@ -15,8 +16,13 @@ const firebaseConfig = {
     measurementId: "G-8ZGRW1XJ32"
   };
 
-var firebaseApp =  firebase.initializeApp(firebaseConfig);
- var db = firebaseApp.firestore();
+  var firebaseApp =  firebase.initializeApp(firebaseConfig);
+  var db = firebaseApp.firestore();
+  var storage = firebase.storage();
 
- export { db };
+  export const auth = firebase.auth;
+
+  export const provider = new firebase.auth.FacebookAuthProvider();
+  export { db };
+  
 export default firebase;

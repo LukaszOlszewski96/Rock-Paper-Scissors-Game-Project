@@ -8,6 +8,7 @@ import LeftBar from './components/Application/LeftBar';
 import Education from './components/Application/Screen/Education';
 import { AuthProvider } from './components/Login/Auth';
 import PrivateRoute from './components/Login/PrivateRoute';
+import Category from './components/Category/Category';
 
 //Tutaj umieszczona jest główna klasa aplikacji
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route path="/" exact component={Home} />
             <Route path="/login" component={Login}/>
             <Route path="/register" component={Register}/>
+            <Route path="/category" component={Category}/>
             <PrivateRoute path ="/edukacja" component={Education}/>
           </Switch>
       </Router>

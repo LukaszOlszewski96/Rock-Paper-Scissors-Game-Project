@@ -24,7 +24,7 @@ function Navbar() {
                     <img className="logo-image" src="image/Logo.jpg" alt="logo"></img></a>
                 </div>
                 <div className="category-conteiner">
-                <a className="category" href="/">Kategorie</a>
+                <a className="category" href="/category">Kategorie</a>
                 <div className="dropdown-content">
                             <a className="dropdown-item" href="/">Programowanie PLC</a>
                             <a className="dropdown-item" href="/">Elektryka</a>

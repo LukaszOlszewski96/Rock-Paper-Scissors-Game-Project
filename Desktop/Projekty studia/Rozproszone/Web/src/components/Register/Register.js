@@ -5,30 +5,53 @@ import {RiLockPasswordLine} from 'react-icons/ri'
 import {BsPerson} from 'react-icons/bs'
 import {ImCheckboxChecked} from 'react-icons/im'
 import {ImCheckboxUnchecked} from 'react-icons/im'
-import googleAuth, { generateUserDocument } from "../Login/googleAuth";
-import { db } from "../Login/googleAuth";
+import { auth, db } from "../Login/googleAuth";
+import firebase from '../Login/googleAuth';
 
 function Register() {
-    
+
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
     const handleSumbit = (e) => {
+
         e.preventDefault();
+
+    /*firebase.auth().createUserWithEmailAndPassword(email, password)
 
         db.collection('user').add({
             firstName: firstName,
             lastName: lastName,
             email: email,
-            password: password
+            password: password,
         }).then(() => {
             alert("User has been submitted")
         })
         .catch((error) => {
             alert(error.message);
         });
+*/
+        //Tworzenie konta z jednoczesnym dodaniem indentyfikatora do tworzonego dokument z użytkownika
+        firebase.auth().createUserWithEmailAndPassword(email, password)
+        .then(function(user){
+            db.collection('user').doc(user.user.uid).set({
+                firstName: firstName,
+                lastName: lastName,
+                email: email,
+                password: password
+            }).then(() => {
+                alert("User has been submitted")
+            })
+            .catch((error) => {
+                alert(error.message);
+            });
+        }).catch((error) => {
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            // ..
+          });
 
         setLastName("")
         setFirstName("")
@@ -36,6 +59,7 @@ function Register() {
         setEmail("")
     };
 
+    
     return (
         <div className="main-conteiner-register">
             <div className="Register-conteiner">
